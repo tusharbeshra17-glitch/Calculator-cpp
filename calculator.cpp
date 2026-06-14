@@ -1,21 +1,30 @@
 #include<iostream>
 #include<cmath>
 using namespace std;
-void menu(){
-     cout<<"\n=========CALCULATOR==========\n";
-    cout<<"1.Addition\n";
-    cout<<"2.subtraction\n";
-    cout<<"3.multiplication\n";               //menu
-    cout<<"4.division\n";
-    cout<<"5.modulo\n";
-    cout<<"6.power\n";
-    cout<<"7.square root\n";
-    cout<<"8. Sin\n";
-    cout<<"9. Cos\n";
-    cout<<"10. Tan\n";
-    cout<<"11. Factorial\n";
-    cout<<"12. Exit\n";
+void menu() {
+    cout << "\n";
+    cout << "=====================================================\n";
+    cout << "            SCIENTIFIC CALCULATOR \n";
+    cout << "=====================================================\n";
 
+    cout << "  BASIC OPERATIONS\n";
+    cout << "-----------------------------------------------------\n";
+    cout << "  [1]  Addition           [2]  Subtraction\n";
+    cout << "  [3]  Multiplication     [4]  Division\n";
+    cout << "  [5]  Modulo             [6]  Power\n";
+
+    cout << "\n  ADVANCED OPERATIONS\n";
+    cout << "-----------------------------------------------------\n";
+    cout << "  [7]  Square Root        [8]  Sin(x)\n";
+    cout << "  [9]  Cos(x)            [10]  Tan(x)\n";
+    cout << " [11]  Factorial\n";
+
+    cout << "\n  SYSTEM\n";
+    cout << "-----------------------------------------------------\n";
+    cout << " [12]  Exit Calculator\n";
+
+    cout << "=====================================================\n";
+    cout << " Enter Your Choice -> ";
 }
 int factorial(int n){
     int fact = 1;
@@ -92,63 +101,110 @@ int main() {
         case 1 :
             cout<<"Enter two numbers :";
             cin>>a>>b;
-            cout<<"result = "<<add(a,b)<<endl; // case 1 addition
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << add(a,b) << endl;
+            cout << "=====================================\n"; // case 1 addition
             break;
         
         case 2 :
             cout<<"Enter two numbers :";
             cin>>a>>b;
-            cout<<"result = "<<sub(a,b)<<endl; // case 2 subtraction
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << sub(a,b) << endl;
+            cout << "=====================================\n"; // case 1 addition
             break;
+        
         
         case 3 :
             cout<<"Enter two numbers :";
             cin>>a>>b;
-            cout<<"result = "<<mul(a,b)<<endl; // case 3 multiplication
+             cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << mul(a,b) << endl;
+            cout << "=====================================\n"; // case 1 addition
             break;
+        
         
         case 4 :
             cout<<"Enter two numbers :";
             cin>>a>>b;
-            cout<<"result = "<<div(a,b)<<endl; // case 4 division
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << div(a,b) << endl;
+            cout << "=====================================\n"; // case 4 addition
             break;
         
         case 5 :
             int x , y; // usind int for modulo 
             cout<<"Enter two numbers :";
             cin>>x>>y;
-            cout<<"result = "<<mod(x,y)<<endl; // case 5 modulo
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << mod(a,b) << endl;
+            cout << "=====================================\n"; // case 1 addition
             break;
+        
         
         case 6 :
             cout<<"Enter two numbers :";
             cin>>a>>b;
-            cout<<"result = "<<power(a,b)<<endl; // case 6 power
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << power(a,b) << endl;
+            cout << "=====================================\n"; // case 1 addition
             break;
         
         case 7 :
             cout<<"Enter a number :";
             cin>>a;
-            cout<<"result = "<<squareroot(a)<<endl; // case 7 square root
-            break;
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << squareroot(a) << endl;
+            cout << "=====================================\n"; // case 1 addition
+            break;// case 7 square root
+          
         
         case 8:
             cout<<"Enter angle in radians: ";
             cin>>a;
-            cout<<"Result = "<<sine(a)<<endl;
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << sin(a) << endl;
+            cout << "=====================================\n"; // case 1 addition
             break;
+            
 
         case 9:
             cout<<"Enter angle in radians: ";
             cin>>a;
-            cout<<"Result = "<<cosine(a)<<endl;
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << cosine(a) << endl;
+            cout << "=====================================\n"; // case 1 addition
             break;
+            
 
         case 10:
            cout<<"Enter angle in radians: ";
            cin>>a;
-           cout<<"Result = "<<tangent(a)<<endl;
-           break;
+           cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " Result = " << tangent(a) << endl;
+            cout << "=====================================\n"; // case 1 addition
+            break;
+            
         
         case 11:{    
             int n;
@@ -156,21 +212,43 @@ int main() {
             cin>>n;
 
             if(n < 0){
-                cout<<"Factorial is not defined for negative numbers!\n";
+               cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout << " factorial is not defined for negative numbers ";
+            cout << "=====================================\n"; // case 1 addition
+            break;
+            ;
             }
             else{
-               cout<<"Result = "<<factorial(n)<<endl;
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout<<"Result = "<<factorial(n)<<endl;
+            cout << "=====================================\n"; // case 1 addition
+            
+               
             }
 
             break;
         }
 
         case 12:
-            cout<<"Calculator closed\n"; // case 8 close
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout<<"Calculator closed\n";
+            cout << "=====================================\n";
+            ; // case 8 close
             break;
         
         default :
-            cout<<"invalide choice !\n"; // default condition 
+            cout << "\n=====================================\n";
+            cout << "        CALCULATION RESULT\n";
+            cout << "=====================================\n";
+            cout<<"invalide choice !\n"; 
+            cout << "=====================================\n";
+           // default condition 
     }
    }while(choice!=12);
 
